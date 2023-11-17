@@ -11,18 +11,18 @@
         <div class="grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5">
           <div class="lg:col-span-2 lg:py-12">
             <p class="max-w-xl text-lg">
-              At the same time, the fact that we are wholly owned and totally
-              independent from manufacturer and other group control gives you
-              confidence that we will only recommend what is right for you.
+              Madiba Sarl Allemagne
             </p>
     
             <div class="mt-8">
               <a href="" class="text-2xl font-bold text-pink-600">
-                0151 475 4450
+                +49/17670232134
+              </a>
+              <a>  hre9114749907
               </a>
     
               <address class="mt-2 not-italic">
-                282 Kevin Brook, Imogeneborough, CA 58517
+                Lichtenfelser Strasse 14, 90427
               </address>
             </div>
           </div>
@@ -30,10 +30,10 @@
           <div class="rounded-lg bg-white p-8 shadow-lg lg:col-span-3 lg:p-12">
             <form action="" class="space-y-4">
               <div>
-                <label class="sr-only" for="name">Name</label>
+                <label class="sr-only" for="name">Nom</label>
                 <input
                   class="w-full rounded-lg border-gray-200 p-3 text-sm"
-                  placeholder="Name"
+                  placeholder="Nom"
                   type="text"
                   id="name"
                 />
@@ -44,17 +44,17 @@
                   <label class="sr-only" for="email">Email</label>
                   <input
                     class="w-full rounded-lg border-gray-200 p-3 text-sm"
-                    placeholder="Email address"
+                    placeholder="Address Email"
                     type="email"
                     id="email"
                   />
                 </div>
     
                 <div>
-                  <label class="sr-only" for="phone">Phone</label>
+                  <label class="sr-only" for="phone">Numéro de Telephone</label>
                   <input
                     class="w-full rounded-lg border-gray-200 p-3 text-sm"
-                    placeholder="Phone Number"
+                    placeholder="Numéro de Telephone"
                     type="tel"
                     id="phone"
                   />
@@ -62,7 +62,7 @@
               </div>
     
               <div class="grid grid-cols-1 gap-4 text-center sm:grid-cols-3">
-                <div>
+                <!-- <div>
                   <input
                     class="peer sr-only"
                     id="option1"
@@ -78,9 +78,9 @@
                   >
                     <span class="text-sm"> Option 1 </span>
                   </label>
-                </div>
+                </div> -->
     
-                <div>
+                <!-- <div>
                   <input
                     class="peer sr-only"
                     id="option2"
@@ -96,9 +96,9 @@
                   >
                     <span class="text-sm"> Option 2 </span>
                   </label>
-                </div>
+                </div> -->
     
-                <div>
+                <!-- <div>
                   <input
                     class="peer sr-only"
                     id="option3"
@@ -112,9 +112,9 @@
                     class="block w-full rounded-lg border border-gray-200 p-3 text-gray-600 hover:border-black peer-checked:border-black peer-checked:bg-black peer-checked:text-white"
                     tabindex="0"
                   >
-                    <span class="text-sm"> Option 3 </span>
+                   <span class="text-sm"> Option 3 </span>  
                   </label>
-                </div>
+                </div> -->
               </div>
     
               <div>
@@ -133,7 +133,7 @@
                   type="submit"
                   class="inline-block w-full rounded-lg bg-black px-5 py-3 font-medium text-white sm:w-auto"
                 >
-                  Send Enquiry
+                  Envoyez 
                 </button>
               </div>
             </form>

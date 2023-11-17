@@ -1,8 +1,8 @@
 <template>
-    <footer class="bg-white lg:grid lg:grid-cols-5">
+    <footer class="bg-black lg:grid lg:grid-cols-5">
       <div class="relative block h-32 lg:col-span-2 lg:h-full">
         <img
-          src="https://images.unsplash.com/photo-1642370324100-324b21fab3a9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1548&q=80"
+          src="../assets/pexel6.png"
           alt=""
           class="absolute inset-0 h-full w-full object-cover"
         />
@@ -18,14 +18,14 @@
     
               <a
                 href="#"
-                class="block text-2xl font-medium text-gray-900 hover:opacity-75 sm:text-3xl"
+                class="block text-2xl font-medium text-gray-200 hover:opacity-75 sm:text-3xl"
               >
                 0123456789
               </a>
             </p>
     
-            <ul class="mt-8 space-y-1 text-sm text-gray-700">
-              <li>Monday to Friday: 10am - 5pm</li>
+            <ul class="mt-8 space-y-1 text-sm text-gray-500">
+              <li>Lundi a Vendredi: 8am - 5pm</li>
               <li>Weekend: 10am - 3pm</li>
             </ul>
     
@@ -35,7 +35,7 @@
                   href="/"
                   rel="noreferrer"
                   target="_blank"
-                  class="text-gray-700 transition hover:opacity-75"
+                  class="text-gray-500 transition hover:opacity-75"
                 >
                   <span class="sr-only">Facebook</span>
     
@@ -59,7 +59,7 @@
                   href="/"
                   rel="noreferrer"
                   target="_blank"
-                  class="text-gray-700 transition hover:opacity-75"
+                  class="text-gray-500 transition hover:opacity-75"
                 >
                   <span class="sr-only">Instagram</span>
     
@@ -83,7 +83,7 @@
                   href="/"
                   rel="noreferrer"
                   target="_blank"
-                  class="text-gray-700 transition hover:opacity-75"
+                  class="text-gray-500 transition hover:opacity-75"
                 >
                   <span class="sr-only">Twitter</span>
     
@@ -105,7 +105,7 @@
                   href="/"
                   rel="noreferrer"
                   target="_blank"
-                  class="text-gray-700 transition hover:opacity-75"
+                  class="text-gray-500 transition hover:opacity-75"
                 >
                   <span class="sr-only">GitHub</span>
     
@@ -129,7 +129,7 @@
                   href="/"
                   rel="noreferrer"
                   target="_blank"
-                  class="text-gray-700 transition hover:opacity-75"
+                  class="text-gray-500 transition hover:opacity-75"
                 >
                   <span class="sr-only">Dribbble</span>
     
@@ -152,60 +152,56 @@
     
           <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
             <div>
-              <p class="font-medium text-gray-900">Services</p>
+              <p class="font-medium text-gray-200">Services</p>
     
               <ul class="mt-6 space-y-4 text-sm">
                 <li>
-                  <a href="#" class="text-gray-700 transition hover:opacity-75">
-                    1on1 Coaching
+                  <a href="#" class="text-gray-500 transition hover:opacity-75">
+                    Logistics
                   </a>
                 </li>
     
                 <li>
-                  <a href="#" class="text-gray-700 transition hover:opacity-75">
-                    Company Review
+                  <a href="#" class="text-gray-500 transition hover:opacity-75">
+                    Ventes de voiture
                   </a>
                 </li>
     
                 <li>
-                  <a href="#" class="text-gray-700 transition hover:opacity-75">
-                    Accounts Review
+                  <a href="#" class="text-gray-500 transition hover:opacity-75">
+                    Transport de colis
                   </a>
                 </li>
     
                 <li>
-                  <a href="#" class="text-gray-700 transition hover:opacity-75">
-                    HR Consulting
+                  <a href="#" class="text-gray-500 transition hover:opacity-75">
+                    Livraison express
                   </a>
                 </li>
     
-                <li>
-                  <a href="#" class="text-gray-700 transition hover:opacity-75">
-                    SEO Optimisation
-                  </a>
-                </li>
+               
               </ul>
             </div>
     
             <div>
-              <p class="font-medium text-gray-900">Company</p>
+              <p class="font-medium text-gray-200">Entreprise</p>
     
               <ul class="mt-6 space-y-4 text-sm">
                 <li>
-                  <a href="#" class="text-gray-700 transition hover:opacity-75">
-                    About
+                  <a href="#" class="text-gray-500 transition hover:opacity-75">
+                    A Propos de Nous
                   </a>
                 </li>
     
                 <li>
-                  <a href="#" class="text-gray-700 transition hover:opacity-75">
-                    Meet the Team
+                  <a href="#" class="text-gray-500 transition hover:opacity-75">
+                    Nous Contactez
                   </a>
                 </li>
     
                 <li>
-                  <a href="#" class="text-gray-700 transition hover:opacity-75">
-                    Accounts Review
+                  <a href="#" class="text-gray-500 transition hover:opacity-75">
+                    Notre Equipe
                   </a>
                 </li>
               </ul>
@@ -236,7 +232,7 @@
             </ul>
     
             <p class="mt-8 text-xs text-gray-500 sm:mt-0">
-              &copy; 2022. Company Name. All rights reserved.
+              &copy; 2023. Madiba Shopping Int. All rights reserved.
             </p>
           </div>
         </div>

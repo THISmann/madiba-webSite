@@ -1,11 +1,35 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+import HomeView from '@/views/HomeView.vue'
+import AboutView from '@/views/AboutView.vue'
+import ServiceView from '@/views/ServiceView.vue'
+import ContactView from '@/views/ContactView.vue'
+import ArrivageView from '@/views/ArrivageView.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
     name: 'home',
     component: HomeView
+  },
+  {
+    path: '/apropos',
+    name: 'Apropos',
+    component: AboutView
+  },
+  {
+    path: '/services',
+    name: 'services',
+    component: ServiceView
+  },
+  {
+    path: '/arrivages',
+    name: 'arrivages',
+    component: ArrivageView
+  },
+  {
+    path: '/contacts',
+    name: 'Contact',
+    component: ContactView
   },
   {
     path: '/about',
