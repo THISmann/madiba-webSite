@@ -1,69 +1,74 @@
 <template>
-    <div class="container-fluid h-screen header">
-        <div class="flex-col p-16">
-            <div class="titleHeader m-4">
-                <h1 class=""> Bienvenu chez madiba </h1><h1> shipping International</h1>
+    <div>
+        <transition name="fade" mode="out-in">
+            <div :key="currentSlide" class="slide" :style="{ backgroundImage: `url(${slides[currentSlide].url})` }">
+                <div class="container-fluid h-screen header">
+                    <div class="flex-col p-16">
+                        <div class="w-2/3 m-4 mb-24">
+                            <h1 class="text-5xl text-white">{{ slides[currentSlide].title }}</h1>
+                        </div>
+                        <div class="w-1/2 m-4 mb-12">
+                            <h2 class="text-2xl text-white">{{ slides[currentSlide].description }}</h2>
+                        </div>
+                        <div class="flex p-1">
+                            <button class="m-1 bg-transparent hover:bg-gray-500 text-white font-semibold hover:text-white py-2 px-4 border border-gray-500 hover:border-transparent rounded">
+                                En Savoir plus
+                            </button>
+                            <button class="m-1 bg-transparent hover:bg-gray-500 text-white font-semibold hover:text-white py-2 px-4 border border-gray-500 hover:border-transparent rounded">
+                                Contactez Nous
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="titleBody m-4">
-                <h2>MADIBA SHIPPING INTERNATIONAL est une entreprise basé en allemangne </h2>
-                <h2>dans l’export de marchandise de l’europe vers l’afrique</h2>
-            </div>
-            <div class="m-4">
-                <button class="titleButton m-1">
-                    <router-link to="/apropos">
-                        En Savoir plus
-                    </router-link>
-                </button>
-                <button class="titleButton m-1">
-                    <router-link to="/contacts">
-                        Contactez Nous
-                    </router-link>
-                </button>
-            </div>
-        </div>
+        </transition>
     </div>
 </template>
+  
 <script lang="ts" setup>
+import { ref, onMounted, onBeforeUnmount } from 'vue';
+
+const slides = [
+    { title: "shipping International", description: "MADIBA SHIPPING INTERNATIONAL est une entreprise basé en allemangne dans l’export de marchandise de l’europe vers l’afrique", url: require("../assets/bg/6.png") },
+    { title: "Douane et Transit", description: "MADIBA SHIPPING INTERNATIONAL est une entreprise basé en allemangne dans l’export de marchandise de l’europe vers l’afrique", url: require("../assets/bg/7.png") },
+    { title: "Envoi de colis ", description: "MADIBA SHIPPING INTERNATIONAL est une entreprise basé en allemangne dans l’export de marchandise de l’europe vers l’afrique", url: require("../assets/bg/9.png") },
+    { title: "Achat de voiture", description: "MADIBA SHIPPING INTERNATIONAL est une entreprise basé en allemangne dans l’export de marchandise de l’europe vers l’afrique", url: require("../assets/bg/10.png") },
+    // Add more slides as needed
+];
+
+const currentSlide = ref(0);
+
+const showNextSlide = () => {
+    currentSlide.value = (currentSlide.value + 1) % slides.length;
+};
+
+onMounted(() => {
+    const intervalId = setInterval(showNextSlide, 5000); // 5000 milliseconds or 5 seconds
+
+    onBeforeUnmount(() => {
+        clearInterval(intervalId);
+    });
+});
 </script>
-<style>
-.titleHeader {
+  
+<style scoped>
+.slide {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
     display: flex;
-    width: 927px;
-    height: 185px;
-    flex-direction: column;
     justify-content: center;
-    flex-shrink: 0;
-    color: #FFF;
-    font-family: Kalam;
-    font-size: 54px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+    align-items: center;
 }
 
-.titleBody {
-    color: #FFF;
-    font-family: Kalam;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity 0.9s;
 }
 
-.titleButton {
-    width: 208px;
-    height: 68px;
-    flex-shrink: 0;
-    border: 4px solid #FFF;
-    background: rgba(255, 255, 255, 0.15);
-    color: #FFF;
-}
-
-.header {
-    background: url(../assets/pexel6.png), lightgray 50% / cover no-repeat;
-    background-size:cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat; 
-
+.fade-enter,
+.fade-leave-to {
+    opacity: 0.9;
 }
 </style>
+  
